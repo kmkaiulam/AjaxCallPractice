@@ -12,17 +12,17 @@
     <link href="index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Song Lyrics</h1>
-    <form action="#" class="js-search-form">
-        <span>Artist:</span>
-        <input type="text" class="js-query-artist" placeholder="Queen">
-        <span>Song title:</span>
-        <input type="text" class="js-query-title" placeholder="Under Pressure">
-        <button type="submit">Search</button>
-    </form>
-    <div class="js-search-results">
-            
-    </div>
-    <script src="index.js"></script>
+    <main>
+      <h1>Song Lyrics</h1>
+      <form action="#" class="js-search-form">
+          <label>Artist:</label>
+          <input aria-label = 'input artist' aria-labelledby = 'queryArtist' id = 'queryArtist' type="text" class="js-query-artist" placeholder="Queen">
+          <label>Song title:</label>
+          <input aria-label = 'input title'  aria-labelledby = 'queryTitle'   id = 'queryTitle'  type="text" class="js-query-title" placeholder="Under Pressure">
+          <button type="submit">Search</button>
+      </form>
+      <div class="js-search-results"></div>
+    </main>
+   <script src="index.js"></script>
   </body>
 </html>
